@@ -40,6 +40,7 @@
           <div class="navbar nav_title" style="border: 0;">
             <a href="home.html" class="site_title"><i class="fa fa-bomb"></i> <span>AC - UAO</span></a>
           </div>
+          <!-- /Barra lateral -->
           <!-- /Icono y texto superior izquierdo -->
           <div class="clearfix"></div>
 
@@ -105,9 +106,9 @@
       </div>
       <!-- /Barra lateral -->
 
+      <!-- Barra superior -->
       <div class="top_nav">
         <div class="nav_menu">
-          <!-- Barra superior -->
           <nav>
             <!-- Icono de compresion -->
             <div class="nav toggle">
@@ -266,10 +267,11 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Tutores</h3>
+                <h3>Proponentes de PEF</h3>
+                <div class="clearfix"></div>
               </div>
 
-              <!--Barra de Busqueda-->
+              <!--Barra de busqueda-->
               <div class="title_right">
                 <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                   <div class="input-group">
@@ -281,199 +283,128 @@
                 </div>
               </div>
             </div>
+            <!--/Barra de busqueda-->
+            <div class="clearfix"></div>
 
-            <div class="x_panel">
-              <div class="x_content">
-                <div class="">
-                  <!--Definición de Tabs-->
-                  <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Lista De Tutores</a>
-                    </li>
-                    <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Agregar Tutor</a>
-                    </li>
-                  </ul>
-                  <!--/Definición de Tabs-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <div class="clearfix"></div>
+                  </div>
 
-                  <!--Contenido de las Tabs-->
-                  <div id="myTabContent" class="tab-content">
-                    <!--Contenido Tab1 -->
-                    <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
-                      <div class="panel">
-                        <div class="panel-body">
-                          <!--Tabla-->
-                          <table class="table table-striped">
-                            <thead>
-                              <tr>
-                                <th>#</th>
-                                <th>Nombre</th>
-                                <th>Apellido</th>
-                                <th>E-Mail</th>
-                                <th>Grupos</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Sebastian</td>
-                                <td>Murillo</td>
-                                <td>Sebastian.murillo@uao.edu.co</td>
-                                <td> 4-9 </td>
-                                <td>
-                                  <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
-                                  <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Eliminar </a>
-                                </td>
-
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Carlos</td>
-                                <td>Cordoba</td>
-                                <td>Carlos.Cordoba@uao.edu.co</td>
-                                <td> 1-3 </td>
-                                <td>
-                                  <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
-                                  <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Eliminar </a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>2-6</td>
-                                <td>
-                                  <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
-                                  <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Eliminar </a>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <!--/Tabla-->
-                        </div>
-                      </div>
-                    </div>
-                    <!--/Contenido Tab1 -->
-
-                    <!--Contenido Tab2 -->
-                    <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
-                      <div class="clearfix"></div>
-                      <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                          <div class="x_panel">
-                            <div class="x_content">
-                              <br />
-                              <!--Formulario-->
-                              <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
-                                <div class="form-group">
-                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nombre <span class="required">*</span>
-                                  </label>
-                                  <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
-                                  </div>
-                                </div>
-                                <div class="form-group">
-                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Apellido <span class="required">*</span>
-                                  </label>
-                                  <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-                                  </div>
-                                </div>
-                                <div class="form-group">
-                                  <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">E_mail</label>
-                                  <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
-                                  </div>
-                                </div>
-
-                                <div class="form-group">
-                                  <label class="control-label col-md-3 col-sm-3 col-xs-3">Fecha<span class="required">*</span>
-                                  </label>
-
-                                  <div class="col-md-4">
-                                    <div id="reportrange_right" class="pull-left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-                                      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                                      <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
-                                    </div>
-                                  </div>
-
-                                </div>
-                                <div class="ln_solid"></div>
-                                <div class="form-group">
-                                  <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-
-                                    <button type="submit"  class="btn btn-success">Agregar</button>
-                                  </div>
-                                </div>
-
-                              </form>
-                              <!--/Formulario-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--/Contenido Tab2 -->
+                  <div class="x_content">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Documento</th>
+                          <th>Apellido</th>
+                          <th>Nombre</th>
+                          <th>Correo</th>
+                          <th>Proyecto Asociado</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>xxxxxxxx</td>
+                          <td>Pradilla</td>
+                          <td>Juan Vicente</td>
+                          <td>jvpradilla@uao.edu.co</td>
+                          <td>
+                            PEF-XXX<br>
+                            PEF-XXX
+                          </td>
+                          <td>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Editar</a>
+                                </li>
+                                <li><a href="#">Eliminar</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>xxxxxxxx</td>
+                          <td>Sanchez</td>
+                          <td>Carlos</td>
+                          <td>csanchez@uao.edu.co</td>
+                          <td>PEF-256</td>
+                          <td>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Editar</a>
+                                </li>
+                                <li><a href="#">Eliminar</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-                <!--/Contenido de las Tabs-->
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- /Contenido de la pagina -->
+            <!-- /Contenido de la pagina -->
 
-      <!-- Pie de Pagina -->
-      <footer>
-        <div class="pull-right">
-          Plataforma Actividad Complementaria <a href="https://colorlib.com/polygon/gentelella/index.html">BETA</a>
+            <!-- Pie de Pagina -->
+            <footer>
+              <div class="pull-right">
+                Plataforma Actividad Complementaria <a href="https://colorlib.com/polygon/gentelella/index.html">BETA</a>
+              </div>
+              <div class="clearfix"></div>
+            </footer>
+            <!-- Pie de Pagina -->
+          </div>
         </div>
-        <div class="clearfix"></div>
-      </footer>
-      <!-- Pie de Pagina -->
-    </div>
-  </div>
 
-  <!-- jQuery -->
-  <script src="../vendors/jquery/dist/jquery.min.js"></script>
-  <!-- Bootstrap -->
-  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-  <!-- FastClick -->
-  <script src="../vendors/fastclick/lib/fastclick.js"></script>
-  <!-- NProgress -->
-  <script src="../vendors/nprogress/nprogress.js"></script>
-  <!-- Chart.js -->
-  <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
-  <!-- gauge.js -->
-  <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
-  <!-- bootstrap-progressbar -->
-  <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-  <!-- iCheck -->
-  <script src="../vendors/iCheck/icheck.min.js"></script>
-  <!-- Skycons -->
-  <script src="../vendors/skycons/skycons.js"></script>
-  <!-- Flot -->
-  <script src="../vendors/Flot/jquery.flot.js"></script>
-  <script src="../vendors/Flot/jquery.flot.pie.js"></script>
-  <script src="../vendors/Flot/jquery.flot.time.js"></script>
-  <script src="../vendors/Flot/jquery.flot.stack.js"></script>
-  <script src="../vendors/Flot/jquery.flot.resize.js"></script>
-  <!-- Flot plugins -->
-  <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-  <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-  <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
-  <!-- DateJS -->
-  <script src="../vendors/DateJS/build/date.js"></script>
-  <!-- JQVMap -->
-  <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
-  <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-  <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-  <!-- bootstrap-daterangepicker -->
-  <script src="../vendors/moment/min/moment.min.js"></script>
-  <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <!-- jQuery -->
+        <script src="../vendors/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- FastClick -->
+        <script src="../vendors/fastclick/lib/fastclick.js"></script>
+        <!-- NProgress -->
+        <script src="../vendors/nprogress/nprogress.js"></script>
+        <!-- Chart.js -->
+        <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+        <!-- gauge.js -->
+        <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+        <!-- bootstrap-progressbar -->
+        <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+        <!-- iCheck -->
+        <script src="../vendors/iCheck/icheck.min.js"></script>
+        <!-- Skycons -->
+        <script src="../vendors/skycons/skycons.js"></script>
+        <!-- Flot -->
+        <script src="../vendors/Flot/jquery.flot.js"></script>
+        <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+        <script src="../vendors/Flot/jquery.flot.time.js"></script>
+        <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+        <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+        <!-- Flot plugins -->
+        <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+        <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+        <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+        <!-- DateJS -->
+        <script src="../vendors/DateJS/build/date.js"></script>
+        <!-- JQVMap -->
+        <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+        <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+        <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+        <!-- bootstrap-daterangepicker -->
+        <script src="../vendors/moment/min/moment.min.js"></script>
+        <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-  <!-- Custom Theme Scripts -->
-  <script src="../build/js/custom.min.js"></script>
+        <!-- Custom Theme Scripts -->
+        <script src="../build/js/custom.min.js"></script>
 
-</body>
-</html>
+      </body>
+      </html>
