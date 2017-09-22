@@ -40,7 +40,6 @@
           <div class="navbar nav_title" style="border: 0;">
             <a href="home.html" class="site_title"><i class="fa fa-bomb"></i> <span>AC - UAO</span></a>
           </div>
-          <!-- /Barra lateral -->
           <!-- /Icono y texto superior izquierdo -->
           <div class="clearfix"></div>
 
@@ -106,9 +105,9 @@
       </div>
       <!-- /Barra lateral -->
 
-      <!-- Barra superior -->
       <div class="top_nav">
         <div class="nav_menu">
+          <!-- Barra superior -->
           <nav>
             <!-- Icono de compresion -->
             <div class="nav toggle">
@@ -263,101 +262,150 @@
         <!-- /Barra superior -->
 
         <!-- Contenido de la pagina -->
+
+        <!-- Gestion de añadir un tutor -->
         <div class="right_col" role="main">
           <div class="">
-            <div class="page-title">
-              <div class="title_left">
-                <h3>Mentores<small><br>Lista de mentores matriculados al curso en el perioro 2017-3</small></h3>
-              </div>
+            <div class="x_panel">
 
-              <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <div class="x_content">
+                <div class="">
+                  <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Agregar Tutor</a>
+                    </li>
+                    <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Lista De Tutores</a>
+                    </li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+                      <div class="clearfix"></div>
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                          <div class="x_panel">
+                            <div class="x_title">
+                              <ul class="nav navbar-right panel_toolbox">
 
-            <div class="clearfix"></div>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="x_content">
+                                <br />
+                                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
-            <div class="row">
-              <div class="col-md-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <div class="clearfix"></div>
+                                  <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nombre <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Apellido <span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">E_mail</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                                    </div>
+                                  </div>
+
+
+                                  <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-3">Fecha<span class="required">*</span>
+                                    </label>
+
+                                    <div class="col-md-4">
+                                      <div id="reportrange_right" class="pull-left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                        <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                  <div class="ln_solid"></div>
+                                  <div class="form-group">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+
+                                      <button type="submit"  class="btn btn-success">Agregar</button>
+                                    </div>
+                                  </div>
+
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+
+                        <div class="panel">
+                          <div class="panel-body">
+                            <table class="table table-striped">
+
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Nombre</th>
+                                  <th>Apellido</th>
+                                  <th>E-Mail</th>
+                                  <th>Grupos</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Sebastian</td>
+                                  <td>Murillo</td>
+                                  <td>Sebastian.murillo@uao.edu.co</td>
+                                  <td> 4-9 </td>
+                                  <td>
+                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
+                                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Eliminar </a>
+                                  </td>
+
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Carlos</td>
+                                  <td>Cordoba</td>
+                                  <td>Carlos.Cordoba@uao.edu.co</td>
+                                  <td> 1-3 </td>
+                                  <td>
+                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
+                                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Eliminar </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                  <td>2-6</td>
+                                  <td>
+                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
+                                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Eliminar </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
                   </div>
-                  <div class="x_content">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>PEF</th>
-                          <th>Apellido</th>
-                          <th>Nombre</th>
-                          <th>Documento</th>
-                          <th>Correo</th>
-                          <th>Colectivos</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">PEF-256</th>
-                          <td>Sanchez</td>
-                          <td>Carlos</td>
-                          <td>11xxxxxxx</td>
-                          <td>csanchez@uao.edu.co</td>
-                          <td>
-                            2G<br>
-                            XX<br>
-                            XX<br>
-                          </td>
-                          <td>
-                            <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                              <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Editar</a>
-                                </li>
-                                <li><a href="#">Eliminar</a>
-                                </li>
-                              </ul>
-                            </li>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">PEF-XXX</th>
-                          <td>Pradilla</td>
-                          <td>Juan Vicente</td>
-                          <td>xxxxxxxx</td>
-                          <td>jvpradilla@uao.edu.co</td>
-                          <td>
-                            XX<br>
-                            XX<br>
-                            XX<br>
-                          </td>
-                          <td>
-                            <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                              <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Editar</a>
-                                </li>
-                                <li><a href="#">Eliminar</a>
-                                </li>
-                              </ul>
-                            </li>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Contenido de la pagina -->
+        <!-- /Contenido de la pagina -->
 
         <!-- Pie de Pagina -->
         <footer>
