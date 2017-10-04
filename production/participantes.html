@@ -116,7 +116,7 @@
             <!-- Icono de compresion -->
             <div class="nav toggle">
               <a id="menu_toggle" class="color1">
-                  <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i>
               </a>
             </div>
             <!-- /Icono de compresion -->
@@ -196,7 +196,7 @@
           </div>
         </div>
         <!-- /Barra superior -->
-        
+
         <!-- Contenido de la pagina -->
         <div class="right_col" role="main">
           <div class="">
@@ -216,151 +216,217 @@
                   </div>
                 </div>
               </div>
+              <!--/Barra de Busqueda-->
             </div>
-            <!--/Barra de Busqueda-->
+            <div class="x_panel">
+              <div class="x_content">
+                <div class="">
 
-            <div class="clearfix"></div>
+                  <!--Definición de Tabs-->
+                  <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+                    <li role="presentation" class="active">
+                      <a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">
+                        Lista De Participantes
+                      </a>
+                    </li>
+                    <li role="presentation" class="">
+                      <a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">
+                        Agregar Participante
+                      </a>
+                    </li>
+                  </ul>
+                  <!--/Definición de Tabs-->
 
-            <div class="row">
-              <div class="col-md-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-                    <!--Tabla-->
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>Codigo</th>
-                          <th>Apellido</th>
-                          <th>Nombre</th>
-                          <th>Documento</th>
-                          <th>Correo</th>
-                          <th>Colectivo</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">2171726</th>
-                          <td>Albarracin</td>
-                          <td>Breyner</td>
-                          <td>1144082856</td>
-                          <td>breyner.albarracin@uao.edu.co</td>
-                          <td>2G</td>
-                          <td>
-                            <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                              <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Editar</a>
-                                </li>
-                                <li><a href="#">Eliminar</a>
-                                </li>
-                              </ul>
-                            </li>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2150886</th>
-                          <td>Lara</td>
-                          <td>Juan</td>
-                          <td>114xxxxxxx</td>
-                          <td>juan.lara@uao.edu.co</td>
-                          <td>2G</td>
-                          <td>
-                            <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                              <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Editar</a>
-                                </li>
-                                <li><a href="#">Eliminar</a>
-                                </li>
-                              </ul>
-                            </li>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">21xxxx</th>
-                          <td>Amilkar</td>
-                          <td>Sebastian</td>
-                          <td>114xxxxxxx</td>
-                          <td>sebastian.amilkar@uao.edu.co</td>
-                          <td>2G</td>
-                          <td>
-                            <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                              <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Editar</a>
-                                </li>
-                                <li><a href="#">Eliminar</a>
-                                </li>
-                              </ul>
-                            </li>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <!--/Tabla-->
+                  <!--Contenido de las Tabs-->
+                  <div id="myTabContent" class="tab-content">
+                    <!--Contenido Tab1 -->
+                    <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+                      <div class="panel">
+                        <div class="panel-body">
+                          <!--Tabla-->
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>Codigo</th>
+                                <th>Apellido</th>
+                                <th>Nombre</th>
+                                <th>Documento</th>
+                                <th>Correo</th>
+                                <th>Colectivo</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">2171726</th>
+                                <td>Albarracin</td>
+                                <td>Breyner</td>
+                                <td>1144082856</td>
+                                <td>breyner.albarracin@uao.edu.co</td>
+                                <td>2G</td>
+                                <td>
+                                  <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
+                                  <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Eliminar </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2150886</th>
+                                <td>Lara</td>
+                                <td>Juan</td>
+                                <td>114xxxxxxx</td>
+                                <td>juan.lara@uao.edu.co</td>
+                                <td>2G</td>
+                                <td>
+                                  <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
+                                  <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Eliminar </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">21xxxx</th>
+                                <td>Amilkar</td>
+                                <td>Sebastian</td>
+                                <td>114xxxxxxx</td>
+                                <td>sebastian.amilkar@uao.edu.co</td>
+                                <td>2G</td>
+                                <td>
+                                  <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
+                                  <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Eliminar </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!--/Tabla-->
+                        </div>
+                      </div>
+                    </div>
+                    <!--/Contenido Tab1 -->
+
+                    <!--Contenido Tab2 -->
+                    <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+                      <div class="clearfix"></div>
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                          <div class="x_panel">
+                            <div class="x_content">
+                              <br />
+                              <!--Formulario-->
+                              <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                                <div class="form-group">
+                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nombre <span class="required">*</span>
+                                  </label>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Apellido <span class="required">*</span>
+                                  </label>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Codigo <span class="required">*</span>
+                                  </label>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="codigo" required="required" class="form-control col-md-7 col-xs-12">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Programa <span class="required">*</span>
+                                  </label>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Grupo <span class="required">*</span>
+                                  </label>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <select class="form-control">
+                                      <option>Seleccione un grupo</option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>57</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="ln_solid"></div>
+                                <div class="form-group">
+                                  <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                    <button type="submit"  class="btn btn-success">Agregar</button>
+                                  </div>
+                                </div>
+                              </form>
+                              <!--/Formulario-->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/Contenido Tab2 -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- /Contenido de la pagina -->
-
-        <!-- Pie de Pagina -->
-        <footer>
-          <div class="pull-right">
-            Plataforma Actividad Complementaria <a href="https://colorlib.com/polygon/gentelella/index.html">BETA</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- Pie de Pagina -->
       </div>
     </div>
+    <!-- /Contenido de la pagina -->
 
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
-    <!-- Chart.js -->
-    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
-    <!-- gauge.js -->
-    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
-    <!-- bootstrap-progressbar -->
-    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- iCheck -->
-    <script src="../vendors/iCheck/icheck.min.js"></script>
-    <!-- Skycons -->
-    <script src="../vendors/skycons/skycons.js"></script>
-    <!-- Flot -->
-    <script src="../vendors/Flot/jquery.flot.js"></script>
-    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="../vendors/Flot/jquery.flot.time.js"></script>
-    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
-    <!-- Flot plugins -->
-    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
-    <!-- DateJS -->
-    <script src="../vendors/DateJS/build/date.js"></script>
-    <!-- JQVMap -->
-    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
-    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="../vendors/moment/min/moment.min.js"></script>
-    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- Pie de Pagina -->
+    <footer>
+      <div class="pull-right">
+        Plataforma Actividad Complementaria <a href="https://colorlib.com/polygon/gentelella/index.html">BETA</a>
+      </div>
+      <div class="clearfix"></div>
+    </footer>
+    <!-- Pie de Pagina -->
+  </div>
+</div>
 
-    <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
+<!-- jQuery -->
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="../vendors/nprogress/nprogress.js"></script>
+<!-- Chart.js -->
+<script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+<!-- gauge.js -->
+<script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+<!-- bootstrap-progressbar -->
+<script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<!-- iCheck -->
+<script src="../vendors/iCheck/icheck.min.js"></script>
+<!-- Skycons -->
+<script src="../vendors/skycons/skycons.js"></script>
+<!-- Flot -->
+<script src="../vendors/Flot/jquery.flot.js"></script>
+<script src="../vendors/Flot/jquery.flot.pie.js"></script>
+<script src="../vendors/Flot/jquery.flot.time.js"></script>
+<script src="../vendors/Flot/jquery.flot.stack.js"></script>
+<script src="../vendors/Flot/jquery.flot.resize.js"></script>
+<!-- Flot plugins -->
+<script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+<script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+<script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+<!-- DateJS -->
+<script src="../vendors/DateJS/build/date.js"></script>
+<!-- JQVMap -->
+<script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+<script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+<script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+<!-- bootstrap-daterangepicker -->
+<script src="../vendors/moment/min/moment.min.js"></script>
+<script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-  </body>
-  </html>
-  <!-- Body del proyecto -->
+<!-- Custom Theme Scripts -->
+<script src="../build/js/custom.min.js"></script>
+
+</body>
+</html>
+<!-- Body del proyecto -->
