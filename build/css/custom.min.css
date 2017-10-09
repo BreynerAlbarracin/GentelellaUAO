@@ -1,6 +1,9 @@
 .color1{
   color:#FFFFFF;
 }
+.centrado1{
+  text-align: center;
+}
 .x_title h2,table.tile_info td p{
   white-space:nowrap;
   text-overflow:ellipsis
