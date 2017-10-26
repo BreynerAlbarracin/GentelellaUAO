@@ -37,10 +37,10 @@
       <div class="col-md-3 left_col">
         <div class="left_col scroll-view">
           <!-- Icono y texto superior izquierdo -->
-          <div class="navbar nav_title" style="border: 0;">
+          <div class="navbar nav_title" style="border: 0;" align="center">
             <a href="home.html" class="site_title">
-              <i class="fa fa-bomb"></i>
-              <span>AC - UAO</span>
+
+              <h2>Actividad <br> Complementaria</h2>
             </a>
           </div>
           <!-- /Barra lateral -->
@@ -73,6 +73,8 @@
             <div class="menu_section">
               <ul class="nav side-menu">
                 <!-- Elemento General del menu -->
+				<li><a href="Home.html"><i class="fa fa-home"></i> Inicio </a>
+                </li>
                 <li><a><i class="fa fa-users"></i> Usuarios <span class="fa fa-chevron-down"></span></a>
                   <!-- Elemento General del menu -->
 
@@ -87,11 +89,11 @@
                 </li>
 
 
-                <li><a><i class="fa fa-book"></i> Asignatura <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-book"></i> Grupos <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                     <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="proyectos.html">Proyecto</a></li>
-                    <li><a href="colectivos.html">Colectivo</a></li>
+                    <li><a href="proyectos.html">PEF</a></li>
+                    <li><a href="colectivo.html">Colectivo</a></li>
                   </ul>
                 </li>
 
@@ -123,6 +125,11 @@
             <ul class="nav navbar-nav navbar-right">
               <li class>
                 <!--Area de Notificaciones-->
+                <li role="presentation" class="dropdown">
+                  <a href="login.html" aria-expanded="false">
+                    <i class="glyphicon glyphicon-off color1"></i>
+                    </a>
+
                 <li role="presentation" class="dropdown">
                   <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-bell-o"></i>
@@ -201,7 +208,12 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Tutores</h3>
+                <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <h2><a href="Home.html">Inicio</a></h2>
+        </li>
+        <li class="breadcrumb-item active">Tutores</li>
+      </ol>
               </div>
 
               <!--Barra de Busqueda-->
