@@ -27,6 +27,10 @@
 
   <!-- Custom Theme Style -->
   <link href="../build/css/custom.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
 </head>
 
 <!-- Body del proyecto -->
@@ -61,13 +65,6 @@
           <!-- /Información del usuario (lateral izquierdo superior) -->
 
           <br />
-
-          <!-- Botones de usuario -->
-          <div style="border: 0;" align="center">
-            <a href="login.html" ><i class="glyphicon glyphicon-off color1"></i></a>
-            <a href="login.html"><i class="glyphicon glyphicon-cog color1"></i></a>
-          </div>
-          <!-- /Botones de usuario -->
 
           <!-- Menu Laterial -->
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
@@ -124,12 +121,18 @@
             </div>
             <!-- /Icono de compresion -->
             <ul class="nav navbar-nav navbar-right">
-              <li class>
+
                 <!--Area de Notificaciones-->
-                <li role="presentation" class="dropdown">
-                  <a href="login.html" aria-expanded="false">
-                    <i class="glyphicon glyphicon-off color1"></i>
-                    </a>
+                <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/user.png" alt="">Administrador
+                  <span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="javascript:;"> Perfil</a></li>
+                  <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Cerrar Sesión</a></li>
+                </ul>
+              </li>
                 <li role="presentation" class="dropdown">
                   <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-bell-o"></i>
@@ -354,9 +357,38 @@
                     </article>
 
                   </div>
-                  <a href="#" type="button" class="btn btn-success">Añadir</a>
+                  <button class="btn btn-success" data-toggle="modal" data-target="#ModalRegistro">Añadir
+								</button>
                 </div>
               </div>
+              <div class="modal fade" id="ModalRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="exampleModalLabel">Añadir Recordatorio</h4>
+
+      </div>
+      <div class="modal-body">
+					<div style="margin-bottom: 25px" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input class="form-control" placeholder="Descripción" id="Descripción" type="text" value="">
+						</div>
+       <div class='input-group date'>
+        						<input type="date" id='fecha'>
+							<div id="datepicker"></div>
+                    </input>
+  				</div>
+				</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal" id="Guardar">Agregar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
             </div>
           </div>
         </div>
